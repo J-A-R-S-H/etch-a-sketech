@@ -6,6 +6,11 @@ container.appendChild(div);
 
 for (let i = 0; i < 16 * 16; i++) {
     const squaredDiv = document.createElement('div')
-    squaredDiv.classList.add("squareDiv")
+    squaredDiv.classList.add("squaredDiv")
     div.appendChild(squaredDiv);
+
+    squaredDiv.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "purple";
+    }
+    )
 }

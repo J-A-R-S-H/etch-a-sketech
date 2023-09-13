@@ -4,8 +4,15 @@
     grid-template-columns: repeat(16, 30px);
 }
 
-.squareDiv {
+.squaredDiv {
     background-color: lime;
     border-width: 1px;
     border: solid;
 }
+
+/* 
+.squareDiv:hover {
+    background-color: black;
+    border-width: 1px;
+    border: solid;
+} */

@@ -10,7 +10,9 @@ for (let i = 0; i < 16 * 16; i++) {
     div.appendChild(squaredDiv);
 
     squaredDiv.addEventListener("mouseover", (event) => {
-        event.target.style.backgroundColor = "purple";
+        event.target.style.backgroundColor = colorPicker.value;
     }
     )
 }
+
+const colorPicker = document.querySelector('input[type="color"]')

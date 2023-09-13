@@ -1,20 +1,15 @@
 .container {
     display: grid;
-    grid-template-rows: repeat(16, 60px);
-    grid-template-columns: repeat(16, 60px);
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     width: 960px;
     height: 960px;
+    border-width: 1px;
+    border: solid;
 }
 
 .squaredDiv {
-    background-color: lime;
+    background-color: white;
     border-width: 1px;
     border: solid;
 }
-
-/* 
-.squareDiv:hover {
-    background-color: black;
-    border-width: 1px;
-    border: solid;
-} */

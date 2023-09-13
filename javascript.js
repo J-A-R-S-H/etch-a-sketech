@@ -33,5 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 let gridSizeButton = document.querySelector(".gridButton");
 gridSizeButton.addEventListener("click", function () {
     let size = prompt("Select your Grid Size")
-    grid(size, size)
+    if (size > 100 || size < 0) {
+        alert("You had too many grids. Try not to exceed a number over 100 or input a value less than 0")
+    }
+    else
+        grid(size, size)
 })
